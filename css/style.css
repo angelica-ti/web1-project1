@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    font-family: 'Arial';
+    /*background-color: #eaeaea;*/
+    background-color: #cdd4ed;
+}
+
+#menu-page {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 2px solid black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #444;
+}
+
+/*.active {
+    background-color: #444;
+}*/
+#acessibility, #web-acessibility, #guidelines, #semantic-tags{
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 25px;
+    padding: 25px;
+    background: #b3beea;
+    /*box-shadow: gray 0.5em 0.5em 0.3em;*/
+    border-radius: 20px;
+}
+h3{
+    margin: 25px;
+    padding: 5px;
+}
+header{
+    margin: 0;
+    text-align: center;
+    padding: 55px 30px 30px 30px;
+    color: white;
+    /*background-color: #c3c3c3;*/
+    background-color: #031668;
+}
+main{
+    margin: 0 20% 0 20%;
+    background-color: white;
+    max-width: 1370px;
+}
+footer, address a{
+    text-align: center;
+    font-size: medium;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+}
+.whatsapp-icon{
+    font-size:24px;
+}
+
+p, ul{
+    margin-right:50px;
+    margin-left:50px;
+    font-size:20px;
+    text-align: justify;
+}
+
+blockquote {
+    text-align: justify;
+    background: #eeeded;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 3.5em;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
+hr{
+    height: 20px;
+    border: #c5cded;
+    background: #c5cded;
+}
+#author{
+    font-size: medium;
+    text-align: center;
+}
