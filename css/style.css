@@ -134,9 +134,9 @@ pre, code {
     margin: 0px 70px 0px 70px;
     font-size: 20px;
     border-radius: 10px;
-    color:white
+    color:white;
 }
 
 pre strong, code strong{
-    color:rgb(76, 181, 216)
+    color:rgb(76, 181, 216);
 }
