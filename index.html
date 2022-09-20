@@ -32,7 +32,7 @@
             primeira vez na década de 40 e as definições iniciais geralmente eram associadas a barreiras
             físicas enfrentadas por pessoas com deficiência. Anos mais tarde, definições oficiais foram
             incluídas em leis federais e normas. Uma definição mais recente de acessibilidade, encontra-se 
-            na <a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/NBR9050_20(1).pdf" title="Link da norma de acessibilidade" target="_blank"> NBR 9050:2020</a>:
+            na <a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/NBR9050_20(1).pdf" target="_blank">norma de acessibilidade NBR 9050:2020</a>:
             <blockquote><p>
             Possibilidade e condição de alcance, percepção e entendimento para utilização, com segurança e 
             autonomia, de espaços, mobiliários, equipamentos urbanos, edificações, transportes, informação e 
@@ -45,7 +45,7 @@
             possam vir a enfrentar algum tipo de limitação temporária ou permanente. 
             </p>
             <h3> Quais os tipos de acessibilidade? </h3>
-            <p>Segundo <cite><a href="https://files.cercomp.ufg.br/weby/up/211/o/SASSAKI_-_Acessibilidade.pdf?1473203319" title="Link para artigo publicado">estudos de Romeu Sasaak</a></cite>
+            <p>Segundo <cite><a href="https://files.cercomp.ufg.br/weby/up/211/o/SASSAKI_-_Acessibilidade.pdf?1473203319">estudos de Romeu Sasaak</a></cite>
             existem seis tipos de acessibilidade:</p>
             <ul>
                 <li>Acessibilidade Atitudinal</li>
@@ -84,8 +84,7 @@
                 
                 <img src="img/CAPTCHA.png" class="center" alt="Imagem de um captcha contendo a frase just example escrita de forma irregular riscada ao meio"  width="100" height="100">
                     
-                <p>&emsp;Em matéria publicada em <a href="https://congressoemfoco.uol.com.br/temas/direitos-humanos/captcha-exclui-cegos-de-servicos-publicos-digitais/" 
-                title="Link para notícia sobre captcha em sites do governo" target="_blank"> CAPTCHA: UM 
+                <p>&emsp;Em matéria publicada em <a href="https://congressoemfoco.uol.com.br/temas/direitos-humanos/captcha-exclui-cegos-de-servicos-publicos-digitais/" target="_blank"> CAPTCHA: UM 
                 DETALHE QUE EXCLUI CEGOS DOS SERVIÇOS PÚBLICOS DIGITAIS</a>, Josiane França, modelo gaúcha
                 de 43 anos, e Priscilla Dantas, estudante de 34 anos de Salvador, Bahia, descrevem suas 
                 experiências negativas com o captcha (mecanismo de segurança digital baseado em teste) em 
@@ -187,8 +186,71 @@
         </section>
         <br><hr><br>
         <section id="section4">
-            <h2 id="semantic-tags">Sites acessíveis</h2><br>
-            <p>Acessível</p>
+            <h2 id="semantic-tags">Sites acessíveis</h2>
+            <h3>Como contruir um site acessível?</h3>
+            <p>&emsp;Para que um site seja acessível, é primordial que os responsáveis pelo desenvolvimento do mesmo
+            conheçam as principais recomendações do WCAG. A seguir veremos como tornar cada elemento html de uma página
+            acessível: 
+            </p>
+            <h4>Títulos</h4>
+            <p>&emsp;O html possui tags de marcação de títulos de <strong>h1</strong> à <strong>h6</strong>. 
+            <strong>h1</strong> representa o título principal e deve existir apenas um deste tipo em uma página web.
+            Se houverem outros títulos em uma página, eles devem seguir uma ordem hierárquica, sem 
+            saltear tamanhos de títulos. <strong>Exemplo:</strong>
+            </p>
+            <pre>
+            <strong>&lt;html&gt;</strong>
+                <strong>&lt;head&gt;</strong>...<strong>&lt;/head&gt;</strong>
+                <strong>&lt;body&gt;</strong>
+                    <strong>&lt;h1&gt;</strong>Acessibilidade na WEB<strong>&lt;/h1&gt;</strong>
+                    <strong>&lt;h2&gt;</strong>Sites Acessíveis<strong>&lt;/h2&gt;</strong>
+                    <strong>&lt;h3&gt;</strong>Como construir um site acessível?<strong>&lt;/h3&gt;</strong>
+                    <strong>&lt;h4&gt;</strong>Títulos<strong>&lt;/h4&gt;</strong>
+                    <strong>&lt;h4&gt;</strong>Textos<strong>&lt;/h4&gt;</strong>
+                    <strong>&lt;h4&gt;</strong>Imagens<strong>&lt;/h4&gt;</strong>
+                    <strong>&lt;h4&gt;</strong>Links<strong>&lt;/h4&gt;</strong>
+                <strong>&lt;/body&gt;</strong>
+            <strong>&lt;/html&gt;</strong>
+            </pre>
+            <h4>Imagens</h4>
+            <p>&emsp;Toda imagem que for adicionada em uma página web deve conter um texto
+            alternativo, possibilitando o reconhecimento pelos leitores de tela. <strong>Exemplo:</strong></p>
+            <code>
+                <strong>&lt;img</strong> src="imgs/paisagem.png" alt="Imagem de uma cachoeira, pássaros sobrevoando o céu e luz do sol refletindo na água"<strong>&gt;</strong> 
+            </code>
+            <p>&emsp;O texto alternativo pode ser útil, não apenas para pessoas com deficiência visual, como também 
+            para um usuário comum que se depara com uma imagem que não carregou adequadamente no site por exemplo.</p>
+            <h4>Links</h4>
+            <p>&emsp;O nome contido entre as tags &lt;a&gt; deve ser autoexplicativo, permitindo que o usuário
+            possa compreender para onde o link irá encaminhá-lo. <strong>Exemplo:</strong></p>
+            <code>
+                <strong>&lt;a</strong> href="https://mwpt.com.br/conheca-dicas-e-exemplos-praticos-para-fazer-links-acessiveis/"<strong>&gt;</strong>Conheça dicas e exemplos práticos para
+                fazer links acessíveis<strong>&lt;a&gt;</strong>
+            </code>
+            <p>No exemplo acima, o texto utilizado como link é o próprio título do site que será acessado.</p>
+            <h4>Tabelas</h4>
+            <p>&emsp;O título de uma tabela é definido dentro da tag &lt;caption&gt; e sua presença é imprescindível
+            para que uma tabela seja considerada acessível. Além disso, utilize a tag &lt;th&gt; para identificar títulos
+            e &lt;td&gt; para valores armazenados na tabela.<strong> Exemplo:</strong>
+            </p>
+            <pre>
+                <strong>&lt;table&gt;</strong>
+                    <strong>&lt;caption&gt;</strong>Registros dos Funcionários<strong>&lt;/caption&gt;</strong>
+                    <strong>&lt;tr&gt;</strong>
+                        <strong>&lt;th&gt;</strong>Nome:<strong>&lt;/th&gt;</strong>
+                        <strong>&lt;th&gt;</strong>Função:<strong>&lt;/th&gt;</strong>
+                    <strong>&lt;/tr&gt;</strong>
+                    ...
+                    <strong>&lt;tr&gt;</strong>
+                        <strong>&lt;td&gt;</strong>Maria<strong>&lt;/td&gt;</strong>
+                        <strong>&lt;td&gt;</strong>Desenvolvedora Web<strong>&lt;/td&gt;</strong>
+                    <strong>&lt;/tr&gt;</strong>
+                    ...
+                <strong>&lt;/table&gt;</strong>
+            </pre>
+            <h4>Formulários</h4>
+            <h4>Mídias</h4>
+            <h4>Tags Semânticas</h4>
         </section>
         <br><br>
     </main>
