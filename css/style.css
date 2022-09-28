@@ -1,9 +1,8 @@
 body {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 20px;
     line-height: 1.5em;
-    font-family: 'Arial';
-    /*background-color: #eaeaea;*/
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #cdd4ed;
 }
 
@@ -19,30 +18,24 @@ body {
     border: 2px solid black;
 }
 
-.left-item {
-    float: left;
-}
-
-li a {
+.menu-item a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    float: left;
+}
+
+.menu-item a:hover {
+    background-color: #444;
 }
 
 li p{
     margin: 0px 0px 10px 0px;
 }
 
-li a:hover {
-    background-color: #444;
-}
-
-/*.active {
-    background-color: #444;
-}*/
-#acessibility, #web-acessibility, #guidelines, #semantic-tags{
+.titles{
     font-weight: bold;
     color: black;
     text-align: center;
@@ -51,18 +44,13 @@ li a:hover {
     margin: 25px;
     padding: 25px;
     background: #b3beea;
-    /*box-shadow: gray 0.5em 0.5em 0.3em;*/
     border-radius: 20px;
-}
-h3{
-    margin: 50px;
 }
 header{
     margin: 0;
     text-align: center;
     padding: 55px 30px 30px 30px;
     color: white;
-    /*background-color: #c3c3c3;*/
     background-color: #031668;
 }
 main{
@@ -82,10 +70,13 @@ footer, address a{
 }
 
 p, h4, ul, dl{
-    margin-right:50px;
-    margin-left:50px;
-    font-size:20px;
+    margin-right:5.5%;
+    margin-left:5.5%;
     text-align: justify;
+}
+
+h3{
+    margin: 5.5%;
 }
 
 section p{
@@ -110,7 +101,6 @@ blockquote:before {
 }
 blockquote p {
     font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
     display: inline;
 }
 hr{
@@ -135,14 +125,10 @@ pre, code {
     border: 1px solid black;
     display: block;
     padding: 10px;
-    margin: 0px 70px 0px 70px;
+    margin: 0px 7% 0px 7%;
     font-size: 20px;
     border-radius: 10px;
     color:white;
-}
-
-pre strong, code strong{
-    color:rgb(76, 181, 216);
 }
 
 #semantic-tags-table, tr, th, td{
@@ -163,4 +149,17 @@ th{
 figure{
     margin:0 auto 0 auto 0;
     font-size: 16px;
+}
+.tags-color{
+    color:rgb(76, 181, 216);
+    font-weight: bold;
+}
+.ppty-color{
+    color:rgb(216, 167, 76);
+}
+#attention{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(252, 233, 236);
+    margin:5.5%;
 }
