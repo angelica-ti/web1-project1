@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-size: 20px;
@@ -117,7 +120,11 @@ pre, code {
     margin: 0px 7% 0px 7%;
     font-size: 20px;
     border-radius: 10px;
-    color:white;
+    color:white; 
+    word-wrap: break-word; 
+}
+.responsive-pre{
+    white-space: pre-wrap;
 }
 #semantic-tags-table, tr, th, td{
     margin:0 auto 0 auto;
