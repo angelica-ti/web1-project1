@@ -5,7 +5,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #cdd4ed;
 }
-
 #menu-page {
     list-style-type: none;
     margin: 0;
@@ -17,20 +16,16 @@ body {
     width: 100%;
     border: 2px solid black;
 }
-
 .menu-item a {
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     float: left;
 }
-
 .menu-item a:hover {
     background-color: #444;
 }
-
 li p{
     margin: 0px 0px 10px 0px;
 }
@@ -38,7 +33,6 @@ li p{
 .titles{
     font-weight: bold;
     color: black;
-    text-align: center;
     text-transform: uppercase;
     font-size: 25px;
     margin: 25px;
@@ -48,7 +42,6 @@ li p{
 }
 header{
     margin: 0;
-    text-align: center;
     padding: 55px 30px 30px 30px;
     color: white;
     background-color: #031668;
@@ -59,7 +52,6 @@ main{
     max-width: 1370px;
 }
 footer, address a{
-    text-align: center;
     font-size: medium;
     color: white;
     background-color: #333;
@@ -110,16 +102,13 @@ hr{
 }
 #author{
     font-size: medium;
-    text-align: center;
 }
-
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-
 pre, code {
     background-color:rgb(38, 37, 37);
     border: 1px solid black;
@@ -130,22 +119,18 @@ pre, code {
     border-radius: 10px;
     color:white;
 }
-
 #semantic-tags-table, tr, th, td{
     margin:0 auto 0 auto;
     padding: 0.2em;
-    text-align: center;
     border: 1px solid black;
     
 }
-
 th{
     text-transform: uppercase;
     padding: 0.5em;
     color: white;
     background-color:#005a6a;
 }
-
 figure{
     margin:0 auto 0 auto 0;
     font-size: 16px;
@@ -162,4 +147,7 @@ figure{
     border-radius: 10px;
     background-color: rgb(252, 233, 236);
     margin:5.5%;
+}
+.center-text{
+    text-align: center;
 }
